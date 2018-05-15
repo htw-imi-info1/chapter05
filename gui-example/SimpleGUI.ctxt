@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=SimpleGUI
+comment0.text=\n\ A\ very\ simple\ example\ for\ a\ GUI.\n\n\ @author\ Barne\ Kleinen\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=SimpleGUI()
+comment2.params=
+comment2.target=void\ createFrame()
+numComments=3
