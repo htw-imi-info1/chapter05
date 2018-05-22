@@ -1,9 +1,11 @@
 #BlueJ class context
 comment0.target=Movie
-comment1.params=
-comment1.target=int\ getReleaseYear()
+comment1.params=title\ watched\ releaseYear
+comment1.target=Movie(java.lang.String,\ boolean,\ int)
 comment2.params=
-comment2.target=boolean\ getWatched()
+comment2.target=int\ getReleaseYear()
 comment3.params=
-comment3.target=java.lang.String\ toString()
-numComments=4
+comment3.target=boolean\ getWatched()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
