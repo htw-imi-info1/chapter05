@@ -12,7 +12,7 @@ public class Movie
 
     public int getReleaseYear(){return releaseYear;}
 
-    public boolean getWatched(){return watched;}
+    public boolean isWatched(){return watched;}
 
     public String toString(){
         return "Movie "+title+" - year: "+releaseYear+ (watched ? " " : " not ") + "watched"; 

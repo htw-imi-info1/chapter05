@@ -20,7 +20,8 @@ public class MovieDatabase
     public void printWatchedInYear(int year){
         movies.stream()
         .filter(movie -> movie.getReleaseYear() == year)
-        .filter(movie -> movie.getWatched())
+        .filter(movie -> movie.isWatched())
         .forEach(movie -> System.out.println(movie.toString()));
     }
+
 }
