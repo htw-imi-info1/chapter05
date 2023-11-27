@@ -4,9 +4,11 @@ import javax.swing.*;
 import java.util.function.*;
 /**
  * A very simple example for a GUI.
+ * Lambdas are an elegant way to attach
+ * functionality to a button as shown here.
  *
  * @author Barne Kleinen
- * @version (a version number or a date)
+ * @version 0.2
  */
 public class SimpleGUI
 {
@@ -38,15 +40,16 @@ public class SimpleGUI
         // The lambda can also be stored in a Variable.
         // It has to be of type ActionListener because that's
         // what the addActionListener method expects.
-        
-        ActionListener countLambda = (ActionEvent e) -> output.setText(String.valueOf(input.getText().length()));
-       
+
+        ActionListener countLambda = (ActionEvent e) -> 
+                output.setText(String.valueOf(input.getText().length()));
+
         button = new JButton("count");
         button.addActionListener(countLambda);
         panel.add(button);
 
         // add everything, pack and show
-        
+
         panel.add(output);
         frame.pack();
         frame.setVisible(true);

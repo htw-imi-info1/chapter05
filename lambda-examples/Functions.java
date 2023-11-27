@@ -1,4 +1,5 @@
-import java.util.function.IntToDoubleFunction;
+import java.util.function.*;
+import java.util.stream.*;
 /**
  * Example for simple Math functions as Lambdas.
  *
@@ -9,7 +10,7 @@ public class Functions
 {
     public Functions(){}
 
-    public void demo(){
+    public static void demo(){
         Functions instance = new Functions();
         instance.printValuesFromTo(0,20,1);
     }
@@ -64,4 +65,11 @@ public class Functions
 
     }
 
+    public void avoidForLoop(){
+       IntStream indices = IntStream.range(0,20);
+       indices.mapToObj(n -> ""+n+": "+n * 2).forEach(System.out::println);
+       
+       IntStream intStream = IntStream.iterate(0,i->i+1).limit(20);
+       intStream.mapToObj(n -> ""+n+": "+n * 2).forEach(System.out::println);
+    }
 }

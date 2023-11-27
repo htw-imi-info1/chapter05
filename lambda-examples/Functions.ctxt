@@ -17,4 +17,6 @@ comment5.text=\n\ and\ here's\ the\ enhanced\ printValuesFromToF\ method\n\ that
 comment6.params=
 comment6.target=void\ demoLambdaLoop()
 comment6.text=\n\ Repeating\ the\ same\ thing\ more\ than\ once\ should\ be\ done\ in\n\ a\ loop,\ so\ let's\ put\ the\ functions\ in\ an\ array\ and\ call\ \n\ the\ method\ in\ a\ loop.\n
-numComments=7
+comment7.params=
+comment7.target=void\ avoidForLoop()
+numComments=8
